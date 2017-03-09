@@ -2,8 +2,8 @@ CPP = g++
 CFLAGS = -std=c++0x
 DEPS = Student.h
 
-main: main.cpp Student.cpp
-	@$(CPP) $(CFLAGS) -o ./Release/Student_db main.cpp Student.cpp
+main: ./src/main.cpp ./src/Student.cpp
+	@$(CPP) $(CFLAGS) -o ./Release/Student_db ./src/main.cpp ./src/Student.cpp
 
 clean:
 	@rm -f ./Release/Student_db

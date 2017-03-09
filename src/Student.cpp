@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Student.h"
+#include "../inc/Student.h"
 
 
 int Student::studentCount = 0;
