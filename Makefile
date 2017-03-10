@@ -1,6 +1,6 @@
 CPP = g++
 CFLAGS = -std=c++0x
-DEPS = Student.h
+DEPS =  Student.h
 
 main: ./src/main.cpp ./src/Student.cpp
 	@$(CPP) $(CFLAGS) -o ./Release/Student_db ./src/main.cpp ./src/Student.cpp
