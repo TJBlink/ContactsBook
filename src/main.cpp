@@ -2,10 +2,10 @@
 #include "../inc/Student.h"
 
 
-int countCharacters(std::string s);
-void printWelcome(void);
-void printList(void);
-std::string setw(int cnt);
+int countCharacters(std::string s);//function which counts characters of string
+void printWelcome(void);//printing welcome screen above main program
+void printList(void);//printing list of persons
+std::string setw(int cnt);//adding spaces between words
 
 
 /*
