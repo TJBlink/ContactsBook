@@ -2,16 +2,23 @@
 #include "../inc/Student.h"
 
 
-void printWelcome(void);
-void printList(void);
-std::string setw(int cnt);
+int countCharacters(std::string s);//function which counts characters of string
+void printWelcome(void);//printing welcome screen above main program
+void printList(void);//printing list of persons
+std::string setw(int cnt);//adding spaces between words
 
 
-
+/*
+*
+* MAIN FUNCTION
+*
+*/
 int main(int argc, char** argv)
 {
     printWelcome();
     printList();
+
+    std::cout << std::endl << std::endl << countCharacters("Jacek") <<std::endl;
 
     return 0;
 }
@@ -26,6 +33,15 @@ void printWelcome(void)
   std::cout << "----------------v1.0----------------" << std::endl;
   std::cout << "------------------------------------" << std::endl;
   std::cout << std::endl;
+}
+
+int countCharacters(std::string s)
+{
+  int i = 0;
+
+  while(s[i] != 0) ++i;
+
+  return i;
 }
 
 std::string setw(int cnt)
