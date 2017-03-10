@@ -41,7 +41,7 @@ std::string setw(int cnt)
 void printList(void)
 {
   Student st1;
-  Student st2("Adam", "Mezgier", 34, 4321);
+  Student st2("Adam", "Krzysko", 43, 1121);
   Student st3 = st2;
 
   st1.setName("Marek");
