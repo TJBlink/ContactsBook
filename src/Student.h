@@ -4,7 +4,8 @@
 class Student
 {
   private:
-    static int studentCount;
+    
+    int studentCount;
 
     std::string name;
     std::string surname;
@@ -24,7 +25,6 @@ class Student
     void setSurname(std::string s);
     void setAge(int a);
     void setID(int i);
-    static int getStudentNumber(void);
 };
 
 #endif//__STUDENT_H

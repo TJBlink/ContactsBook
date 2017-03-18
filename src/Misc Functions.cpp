@@ -34,17 +34,21 @@ string setw(int cnt)
 }
 
 void printList(void)
-{
+{   int numberOfStudents = 0;
+    
     Student st1;
+    ++numberOfStudents;
     Student st2("Adam", "Krzysko", 43, 1121);
+    ++numberOfStudents;
     Student st3 = st2;
+    ++numberOfStudents;
     
     st1.setName("Marek");
     st1.setSurname("Kowalski");
     st1.setAge(24);
     st1.setID(1234);
     
-    cout << "Number of students added to database: " << Student::getStudentNumber();
+    cout << "Number of students added to database: " << numberOfStudents;
     cout << endl;
     cout << endl;
     

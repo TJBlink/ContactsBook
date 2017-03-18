@@ -1,30 +1,18 @@
 #include <iostream>
 #include "Student.h"
 
-
-int Student::studentCount = 0;
-
-
 Student::Student()
 {
-  ++studentCount;
 }
 
 Student::Student(std::string n, std::string s, int a, int i)
  : name(n), surname(s), age(a), id(i)
 {
-  ++studentCount;
 }
 
 Student::Student(const Student& st)
   : name(st.name), surname(st.surname), age(st.age), id(st.id)
 {
-    ++studentCount;
-}
-
-int Student::getStudentNumber(void)
-{
-  return studentCount;
 }
 
 std::string Student::getName(void)
