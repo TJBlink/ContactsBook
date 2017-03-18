@@ -1,11 +1,13 @@
 #include <iostream>
 #include "../inc/Student.h"
 
+using namespace std;
 
-int countCharacters(std::string s);//function which counts characters of string
+
+int countCharacters(string s);//function which counts characters of string
 void printWelcome(void);//printing welcome screen above main program
 void printList(void);//printing list of persons
-std::string setw(int cnt);//adding spaces between words
+string setw(int cnt);//adding spaces between words
 
 
 /*
@@ -18,7 +20,7 @@ int main(int argc, char** argv)
     printWelcome();
     printList();
 
-    std::cout << std::endl << std::endl << countCharacters("Jacek") <<std::endl;
+    cout << endl << endl << countCharacters("Jacek") << endl;
 
     return 0;
 }
@@ -27,15 +29,15 @@ int main(int argc, char** argv)
 
 void printWelcome(void)
 {
-  std::cout << std::endl;
-  std::cout << "------------------------------------" << std::endl;
-  std::cout << "----------STUDENT DATABASE----------" << std::endl;
-  std::cout << "----------------v1.0----------------" << std::endl;
-  std::cout << "------------------------------------" << std::endl;
-  std::cout << std::endl;
+  cout << endl;
+  cout << "------------------------------------" << endl;
+  cout << "----------STUDENT DATABASE----------" << endl;
+  cout << "----------------v1.0----------------" << endl;
+  cout << "------------------------------------" << endl;
+  cout << endl;
 }
 
-int countCharacters(std::string s)
+int countCharacters(string s)
 {
   int i = 0;
 
@@ -44,9 +46,9 @@ int countCharacters(std::string s)
   return i;
 }
 
-std::string setw(int cnt)
+string setw(int cnt)
 {
-  std::string spaces;
+  string spaces;
 
   for(int i = 1; i < cnt; ++i)
         spaces = spaces + " ";
@@ -65,30 +67,30 @@ void printList(void)
   st1.setAge(24);
   st1.setID(1234);
 
-  std::cout << "Number of students added to database: " << Student::getStudentNumber();
-  std::cout << std::endl;
-  std::cout << std::endl;
+  cout << "Number of students added to database: " << Student::getStudentNumber();
+  cout << endl;
+  cout << endl;
 
-  std::cout << "Student: " << setw(5) << st1.getName() << " " << st1.getSurname();
-  std::cout << std::endl;
-  std::cout << "Age: " << setw(9) << st1.getAge();
-  std::cout << std::endl;
-  std::cout << "ID: " << setw(10) << st1.getID();
-  std::cout << std::endl;
+  cout << "Student: " << setw(5) << st1.getName() << " " << st1.getSurname();
+  cout << endl;
+  cout << "Age: " << setw(9) << st1.getAge();
+  cout << endl;
+  cout << "ID: " << setw(10) << st1.getID();
+  cout << endl;
 
-  std::cout << std::endl;
-  std::cout << "Student: " << setw(5) << st2.getName() << " " << st2.getSurname();
-  std::cout << std::endl;
-  std::cout << "Age: " << setw(9) << st2.getAge();
-  std::cout << std::endl;
-  std::cout << "ID: " << setw(10) << st2.getID();
-  std::cout << std::endl;
+  cout << endl;
+  cout << "Student: " << setw(5) << st2.getName() << " " << st2.getSurname();
+  cout << endl;
+  cout << "Age: " << setw(9) << st2.getAge();
+  cout << endl;
+  cout << "ID: " << setw(10) << st2.getID();
+  cout << endl;
 
-  std::cout << std::endl;
-  std::cout << "Student: " << setw(5) << st3.getName() << " " << st3.getSurname();
-  std::cout << std::endl;
-  std::cout << "Age: " << setw(9) << st3.getAge();
-  std::cout << std::endl;
-  std::cout << "ID: " << setw(10) << st3.getID();
-  std::cout << std::endl;
+  cout << endl;
+  cout << "Student: " << setw(5) << st3.getName() << " " << st3.getSurname();
+  cout << endl;
+  cout << "Age: " << setw(9) << st3.getAge();
+  cout << endl;
+  cout << "ID: " << setw(10) << st3.getID();
+  cout << endl;
 }
