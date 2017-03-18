@@ -17,40 +17,40 @@ Student::Student(const Student& st)
 
 std::string Student::getName(void)
 {
-  return name;
+    return name;
 }
 
 std::string Student::getSurname(void)
 {
-  return surname;
+    return surname;
 }
 
 int Student::getAge(void)
 {
-  return age;
+    return age;
 }
 
 int Student::getID(void)
 {
-  return id;
+    return id;
 }
 
 void Student::setName(std::string n)
 {
-  name = n;
+    name = n;
 }
 
 void Student::setSurname(std::string s)
 {
-  surname = s;
+    surname = s;
 }
 
 void Student::setAge(int a)
 {
-  age = a;
+    age = a;
 }
 
 void Student::setID(int i)
 {
-  id = i;
+    id = i;
 }
