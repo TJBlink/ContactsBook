@@ -4,11 +4,6 @@
 
 using namespace std;
 
-/*
-*
-* MAIN FUNCTION
-*
-*/
 int main(int argc, char** argv)
 {
     printWelcome();
